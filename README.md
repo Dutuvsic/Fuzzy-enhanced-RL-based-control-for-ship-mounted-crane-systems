@@ -8,4 +8,4 @@ shipRL.m                 RL algorithm
 rarm_shipc.m              Parameter setup 
 rarm_mdpstandalone.m      Discrete-time dynamics 
 
-PS: A ship-mounted crane model that can be established through Matlab/Simulink can better demonstrate the control effect
+PS: A ship-mounted crane model that can be established through Matlab/Simulink can better demonstrate the control effect.
