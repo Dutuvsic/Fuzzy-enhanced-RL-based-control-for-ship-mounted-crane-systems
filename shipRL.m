@@ -34,10 +34,18 @@ CFG.viscfg = struct;                % visualization config options
 CFG.verb = 5;                       % verbosity: the higher, the more detailed the messages displayed
 CFG.noplot = 0;                     % whether to suppress figure plots
 CFG.silent = 0;                     % suppress all output
-CFG.initstepdisp =0.1;              % feedback every 10% of MDP init
+CFG.initstepdisp = 0.1;              % feedback every 10% of MDP init
 CFG.iterdisp = 10;                  % feedback after every 10 iterations
 CFG.itervis = 10;                   % visualize once every 10 iterations
 CFG.itersave = 25;                  % save after each 25 iterations
+
+%% stats & figure output config
+CFG.truncatehist = [];              % whether history should be truncated at this time value (in seconds)
+                                    % before outputting and using in plots
+CFG.plottarget = 'screen';          % 'screen', '', 'latex', or 'beamer'. If 'screen' figures will not be closed
+CFG.savetheta = 1;                  % save param history in stats
+CFG.savedir = '';                   % save figure in this directory
+CFG.savefig = '';                   % save figure under this name
 
 %% Early defaults (initialized before calling problem defaults)
 ECFG.fuzzy_params = {};            
@@ -46,7 +54,7 @@ ECFG.model_params = {};
 KEEPFIELDS = {'problem', 'gamma', 'storeact', 'serial'};
 
 %%
-% Fuzzy center and discrete action definitions
+% Fuzzy center for state and action 
 q1=[10 15 20 25 30 35 40 45 50 55 60]*pi/180;
 dq1=[-90 -45 0 45 90]*pi/180;
 q2=[0.05 0.1 0.3 0.35 0.4];
