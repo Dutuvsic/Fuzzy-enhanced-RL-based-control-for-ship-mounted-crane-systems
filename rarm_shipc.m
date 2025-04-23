@@ -11,7 +11,7 @@ switch what
         else
             cfg = struct;
         end
-
+        % system parameter 
         MODEL.type = 'default';
         MODEL.wrap = 1;                          
         MODEL.len =      [0.7     0.7];         
