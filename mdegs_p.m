@@ -2,7 +2,6 @@ function [ind, mu, indp] = mdegs_p(x, c, roll, n, p, tab)
 
 indp = zeros(bitshift(1, p), p);    
 mu = indp;
-
 % compute 1-dimensional mdegs and indices of activated 1-dimensional MFs
 for ip = p:-1:1
     i = find(c{ip} <= x(ip), 1, 'last');
