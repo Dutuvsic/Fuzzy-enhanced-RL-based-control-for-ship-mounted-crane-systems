@@ -5,7 +5,6 @@ clc;
 
 shipcfg = struct;
 shipcfg.problem = 'rarm_shipc';
-
 shipcfg.model_params = {'orientation=vert maxtau=[10,3]'};
 shipcfg.gamma = 0.98;      % discount factor
 
