@@ -14,7 +14,7 @@ cfg = struct;
 for i = 1:length(keywords)
     kw = keywords{i}; kwlen = length(kw);
     indices = strfind(str, keywords{i});
-    if isempty(indices), continue; end      % no setting found
+    if isempty(indices), continue; end      % no setting
     accept = 0;
     for j = 1:length(indices)
         ix = indices(j); after = ix + kwlen; before = ix - 1;
