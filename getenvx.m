@@ -68,7 +68,6 @@ while true
 end;
 
 end
-% -------------------------------------------------
 
 function n2 = makegoodfieldname(n)
 
