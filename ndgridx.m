@@ -4,7 +4,6 @@ N = lengthgrids(x);
 n = length(N);
 
 X = cell(n, 1);
-
 if n == 1
     X{1} = x{1}; return; 
 end
