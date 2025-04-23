@@ -5,7 +5,6 @@ if nargin < 3,  level = 0; end
 if level > verb, d = 0; return; end   % fast return
 if nargin < 4,  varname = 'msg'; end
 if nargin < 5,  vartype = []; end
-
 if level <= verb,
     if strcmp(vartype, 'char') || ischar(message), disp(message); 
     else    
