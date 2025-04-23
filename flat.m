@@ -1,5 +1,5 @@
 function X = flat(x)
-% Gives an explicit enumeration of the set of points in the cross product of n grids
+% Provide an explicit enumeration of point sets in n grid cross products
 if length(x) == 1, X = x{1}; 
 else
     n = length(x);
